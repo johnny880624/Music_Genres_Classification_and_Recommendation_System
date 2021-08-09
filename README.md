@@ -3,8 +3,8 @@
 Hello everyone!
 Since I learned Python,It has been 5 months.
 This is kinda my first machine learning project done from zero to finished.
-The idea of our project is from one of my teamates who loves to listen musics on Spotify.
-But unfortunately, The recommendation system on Spotify is made for general users not for personal.
+The idea of our project is from one of my teammates who loves to listen to music on Spotify.
+But unfortunately, The recommendation system on Spotify is made for general users, not for personal.
 Therefore, We decide to build a customized system for ourselves. 
 Doesn't it sound exciting?? LoL
 
