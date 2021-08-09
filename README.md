@@ -12,7 +12,7 @@ Doesn't it sound exciting?? LoL
 Mostly we used a package called librosa, a useful tool which help us analyze audio files and extract the features we wanted.
 Firstly, We downloaded 100-thousand different audio files from Internet but most of them are belongs to Rock genres. We retrained those audio files with less genres data in order to balance our genres.
 Secondly, We put every song muti-labels(not single label) to classify them more specific.
-Third, after finishing data-preprocessing, We Built a model with three layers NN using BinaryCrossentropy as our loss funtion(click the [UTL](https://colab.research.google.com/drive/19vx7-9ogV0VJdORmiBwPiLuU9AnFkrKx?usp=sharing) to see the model detail) which can classify song's genres.(acc up to 75%)(evalution:AUC)
+Third, after finishing data-preprocessing, We Built a model with three layers NN using BinaryCrossentropy as our loss funtion(click the [CODE LINK](https://colab.research.google.com/drive/19vx7-9ogV0VJdORmiBwPiLuU9AnFkrKx?usp=sharing) to see the model detail) which can classify song's genres.(acc up to 75%)(evalution:AUC)
 Last but not least, we build a recommandation system by utilizing cross comparison way to get the optimal songs to our users.
 
 # Result
