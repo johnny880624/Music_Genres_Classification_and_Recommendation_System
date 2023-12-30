@@ -1,23 +1,17 @@
-## Music-Genres-Classification-and-Recommendation-System
-# Idea
-Hello everyone!\
-Since I learned Python,It has been 5 months.\
-This is kinda my first machine learning project done from zero to finished.\
-The idea of our project is from one of my teammates who loves to listen to music on Spotify.\
-But unfortunately, The recommendation system on Spotify is made for general users, not for personal.\
-Therefore, We decide to build a customized system for ourselves. \
-Doesn't it sound exciting?? LoL
+# Music-Genres-Classification-and-Recommendation-System
+## Introduction
+As the world's musical library continues to expand, offering us an ever-increasing array of choices, it becomes increasingly important to have personalized methods of selecting songs that resonate with our unique tastes. Although modern music streaming platforms like Spotify offer various recommendation systems, these are often tailored for a general audience rather than individual preferences. Recognizing this, we've decided to create a customized music recommendation system that caters specifically to our personal tastes and preferences.     
 
-# Method
-Mostly we used a package called librosa, a useful tool which help us analyze audio files and extract the features we wanted.\
-Firstly, We downloaded 100-thousand different audio files from Internet but most of them are belongs to Rock genres. We retrained those audio files with less genres data in order to balance our genres.\
-Secondly, We put every song muti-labels(not single label) to classify them more specific.\
-Third, after finishing data-preprocessing, We Built a model with three layers NN using BinaryCrossentropy as our loss funtion(click the [CODE LINK](https://colab.research.google.com/drive/19vx7-9ogV0VJdORmiBwPiLuU9AnFkrKx?usp=sharing) to see the model detail) which can classify song's genres.(acc up to 75%)(evalution:AUC)
-Last but not least, we build a recommandation system by utilizing cross comparison way to get the optimal songs to our users.
+## Method
+We primarily utilized Librosa, a powerful tool for analyzing audio files and extracting desired features. Initially, we downloaded approximately 100,000 audio files from the internet, predominantly from the rock genre. To ensure genre diversity, we performed data augmentation to enlarge the dataset with audio files from underrepresented genres. Additionally, we assigned multiple labels to each song, rather than a single label, to enable more specific genre classification. Finally, we built our model using a three-layer neural network, employing Binary Cross-Entropy as our loss function, to accurately classify songs into their respective genres.     
+(click the [CODE LINK](https://colab.research.google.com/drive/19vx7-9ogV0VJdORmiBwPiLuU9AnFkrKx?usp=sharing) to see the model detail)**(accuracy up to 75%)**(evalution:AUC)    
 
-# Result
-When users put a song they love into our model, they can get the most similar genres songs eventually.
+Finally, we developed a recommendation system using a cross-comparison approach. This method involves comparing various features of songs within our dataset to identify those that closely align with the individual preferences of our users. By analyzing the similarities between songs in terms of their musical characteristics and genres, our system is able to suggest the most suitable and enjoyable tracks to each user. This personalized approach ensures that the recommendations are not only based on general popularity or broad genres but are tailored to the specific tastes and listening habits of each individual.     
 
-# Future
-Because of unbalance genres data, we retrained the same songs with less genres data. Maybe we can alter song's gamut to a brand_new song but still the smae genres. Therefore, we can avoid overfitting then be able to train deeper.
-Because of using NN, there will be more possibilities to be overfitting. Maybe we can try cnn to avoid these situations.
+## Result
+When users input a song they enjoy into our model, the system is designed to identify and recommend three songs with similar genres to them.    
+
+## Future
+Due to the imbalance in genre representation within our dataset, we retrained our model with a more balanced selection of songs, focusing on genres that were previously underrepresented. One innovative approach we considered was altering the pitch and tempo of existing songs to create new variations, while still maintaining their original genre characteristics. This strategy not only diversifies our dataset but also helps in mitigating the risk of overfitting, thereby enabling us to train our model more comprehensively.   
+
+Given the inherent risk of overfitting associated with neural networks, we are exploring the potential of Convolutional Neural Networks (CNNs) as an alternative. CNNs, renowned for their proficiency in pattern recognition and feature extraction in complex datasets, could offer improved generalization in identifying intricate patterns in music data. This shift in methodology might enhance our system's ability to discern nuanced differences between genres and deliver more accurate recommendations.    
