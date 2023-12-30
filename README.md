@@ -1,4 +1,4 @@
-# Music-Genres-Classification-and-Recommendation-System
+# Music_Genres_Classification_and_Recommendation_System
 ## Introduction
 As the world's musical library continues to expand, offering us an ever-increasing array of choices, it becomes increasingly important to have personalized methods of selecting songs that resonate with our unique tastes. Although modern music streaming platforms like Spotify offer various recommendation systems, these are often tailored for a general audience rather than individual preferences. Recognizing this, we've decided to create a customized music recommendation system that caters specifically to our personal tastes and preferences.     
 
